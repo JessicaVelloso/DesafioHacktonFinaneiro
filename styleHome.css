@@ -1,12 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,600&family=Montserrat:ital,wght@1,100&display=swap');
-
 *{
     margin: 0;
     padding: 0;
+    outline: 0px;
     text-decoration: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Libre Bodoni', serif;
+body{
+    background-color: #1B1F24; 
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #121418;
+}
+
+.logo img{
+    width:85px;
+    padding-left: 30px;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 45px;
+    justify-items: center;
+}
+
+.menu a {
+    color: white;
+    transition: transform 1s;
+}
+  
+.menu a:hover,
+.menu a:focus {
+    color: goldenrod;
+    text-decoration: solid;
+    transform: translateX(8px) scale(1.2);   
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    display: block;
+}
+
+.imgTitulo{
+    justify-content: center;
+}
+
+.imgMain{
+    width: 500px;
+}
+
+.titulo-home{
+    text-align: center;
+}
+
+.texto-alternado{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.texto-direita{
+    text-align: right;
+}
+.texto-direita{
+    text-align: left;
+}
+
+main p{
+    margin-bottom: 15px;
 }
