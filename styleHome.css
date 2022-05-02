@@ -90,10 +90,7 @@ main{
 }
 
 .texto-direita{
-    text-align: right;
-}
-.texto-direita{
-    text-align: left;
+    text-align: justify;
 }
 
 main p{
