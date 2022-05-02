@@ -1,0 +1,72 @@
+
+
+.principal{
+    display: flex;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.esquerdo{
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.principal-roxo{
+    background: -webkit-linear-gradient(to left, #9B06CE, #840EC9);
+    background: linear-gradient(to left, #9B06CE, #840EC9);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.principal-branco{
+    color: white;
+    font-size: 3em;
+}
+
+.paragrafo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: left;
+}
+
+.input{
+    
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: #232123;
+    box-shadow: 2px 2px rgb(150, 23, 161);
+}
+
+.botao-enviar{
+    background-color: #9B06CE;
+    box-shadow: -2px -2px rgb(153, 146, 146);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: #232123;
+}
+
+.botao-enviar:hover{
+    background-color: white;
+    color: #9B06CE;
+}
+
+
+}
+.direita{
+    display: flex;
+    padding-right: 30px;
+    width: 100px;
+}
