@@ -5,21 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo 14</title>
-    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="styleFerramentas.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div>
-        <img src="" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="dicas.html">Dicas/Notícias</a></li>
-                <li><a href="ferramentas.html">Ferramentas</a></li>
-                <li><a href="ajuda.html">Ajuda</a></li>
-            </ul>
+    <header class="cabecalho">
+        <div class="logo"><img src="img/3029253.png" alt="Logo"></div>
+        <nav class="menu">
+            <a class=menu-itens href="home.html">Home</a>
+            <a class=menu-itens href="cursos.html">Cursos</a>
+            <a class=menu-itens href="dicas.html">Dicas</a>
+            <a class=menu-itens href="noticias.html">Notícias</a>
+            <a class=menu-itens href="ferramentas.html">Ferramentas</a>
+            <a class=menu-itens href="ajuda.html">Ajuda</a>
         </nav>
+    </header>
+    <main>
+        <div class="fundo">
+            <div class="calculadora"> 
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()"><=</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>    
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>    
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>    
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>        
+                </tr>
+                
+            </table>
+            
+        </div>
     </div>
-<h1>FERRAMENTAS</h1>
+    <script>
+        function insert(num){
+           var numero = document.getElementById('resultado').innerHTML;
+           document.getElementById('resultado').innerHTML = numero + num;
+        }
+        function clean(){
+            document.getElementById('resultado').innerHTML = "";
+        }
+        function back(){
+            var resultado = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+        }
+
+        function calcular(){
+            var resultado = document.getElementById('resultado').innerHTML;
+            if(resultado){
+                document.getElementById('resultado').innerHTML = eval(resultado);
+            }
+        }
+    </script>
 </body>
 </html>

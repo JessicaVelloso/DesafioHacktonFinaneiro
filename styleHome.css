@@ -46,7 +46,7 @@ header{
     text-decoration: solid;
     transform: translateX(8px) scale(1.2);   
 }
-
+/*COLOCAR EM TODAS AS PÁGINAS, ATÉ AQUI*/
 .cabeçalho {
     display: flex;
     align-items: center;
