@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #1B1F24; 
+    background-color: #33cf8e; 
     color: white;
 }
 /*CABEÇALHO*/
@@ -18,7 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    background-color: #121418;
+    background-color: #2DC083;
 }
 
 .logo img{
