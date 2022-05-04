@@ -58,51 +58,47 @@ header{
 main{
     /*flex-wrap: wrap;*/
     /*justify-content: center;*/
-    display: flex;
     align-items: center ;
     flex-wrap: wrap;
 }
 h1{
-    margin: 0 auto;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    text-align: center;
 }
 .curso{
     justify-content: center;
-    
+    margin-bottom: 35px;  
 }
 .curso h2{
-    justify-content: center;
+    text-align: center;
 }
 .curso-flex{
-    margin-top: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25%; /* posiciona na metade da tela */
-   
-    
+    margin-top: 20px;
+    margin-left: 25%; /* posiciona na metade da tela */ 
 }
-.cursos{
+
+.cursos-info{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
     align-items: center;
 }
-.cursos p{
-    width: 90%;
+.cursos-info p{
+    width: 420px;
     text-align: justify;
     margin-bottom: 10px;
 }
 
 table{
-    justify-content: center;
     color: darkgreen;
     border-collapse: collapse; /* CSS2 */
     background: #ffffff;
-    border: 1px solid goldenrod;
-    width: 90%;
+    width: 420px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 table td{
     text-align: right;
@@ -111,20 +107,28 @@ table td{
 table th{
     text-align: left;
     border: 1px solid goldenrod;
-    background: #ffffff;
 }
 .botao__tabela{
     margin-top: 10px;
     border: none;
     width: 140px;
+    height: 25px;
     background-color: goldenrod;
-    color: darkgreen;
+    border-radius: 5px;
+    transition: 300ms;
 }
 .botao__tabela a{
     color: darkgreen;
     font-size: 15px;
 }
+
+.curso-imagens{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
 .curso-img{
     align-items: center;
-    max-width: 50%;
+    width: 180px;
+    height: 180px;
 }   
