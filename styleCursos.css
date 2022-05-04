@@ -56,6 +56,15 @@ header{
 /*TÉRMINO DO CABEÇALHO/INÍCIO DO MAIN*/
 
 main{
+    background-color: white;
+    color: darkgreen;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgb(249, 231, 89);
     /*flex-wrap: wrap;*/
     /*justify-content: center;*/
     align-items: center ;
@@ -76,18 +85,18 @@ h1{
 }
 .curso-flex{
     display: flex;
+    
     margin-top: 20px;
-    margin-left: 25%; /* posiciona na metade da tela */ 
 }
 
 .cursos-info{
+    margin: auto;
     display: flex;
     flex-direction: column;
-    width: 50%;
     align-items: center;
 }
 .cursos-info p{
-    width: 420px;
+    width: 350px;
     text-align: justify;
     margin-bottom: 10px;
 }
@@ -96,7 +105,8 @@ table{
     color: darkgreen;
     border-collapse: collapse; /* CSS2 */
     background: #ffffff;
-    width: 420px;
+    width: 100%;
+    width: 350px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -124,7 +134,6 @@ table th{
 
 .curso-imagens{
     display: flex;
-    width: 50%;
     align-items: center;
 }
 .curso-img{

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styleFerramentas.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="logo"><img src="img/3029253.png" alt="Logo"></div>
@@ -21,63 +23,84 @@
         </nav>
     </header>
     <main>
-        <div class="fundo">
-            <div class="calculadora"> 
-            <h1>Calculadora</h1>
-            <p id="resultado"></p>
-            <table>
-                <tr>
-                    <td><button class="botao" onclick="clean()">C</button></td>
-                    <td><button class="botao" onclick="back()"><=</button></td>
-                    <td><button class="botao" onclick="insert('/')">/</button></td>
-                    <td><button class="botao" onclick="insert('*')">x</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('7')">7</button></td>
-                    <td><button class="botao" onclick="insert('8')">8</button></td>
-                    <td><button class="botao" onclick="insert('9')">9</button></td>
-                    <td><button class="botao" onclick="insert('-')">-</button></td>    
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('4')">4</button></td>
-                    <td><button class="botao" onclick="insert('5')">5</button></td>
-                    <td><button class="botao" onclick="insert('6')">6</button></td>
-                    <td><button class="botao" onclick="insert('+')">+</button></td>    
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('1')">1</button></td>
-                    <td><button class="botao" onclick="insert('2')">2</button></td>
-                    <td><button class="botao" onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>    
-                </tr>
-                <tr>
-                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
-                    <td><button class="botao" onclick="insert('.')">.</button></td>        
-                </tr>
+        <h1>CALCULADORA</h1>
+        <section>
+            <h2>Regra 50 30 20?</h2>
+            <p>Abaixo, te ajudamos a fazer as contas, em uma caluladora normal, utilizando um exemplo de alguém que tem renda líquida de R$1.000,00</p>
+            <ul>
+                <h3>E na prática, como calculamos isso em uma calculadora real?</h3>
+                <li>Necessidades:<br/> O modelo sugere que utilizemos 50% da nossa renda com gastos essenciais. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,50(Que é o mesmo que 50%). No Exemplo: R% 500,00 </li>
+                <li>Desejos pessoais:<br/> O valor máximo deve corresponder a 30% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,30(Que é o mesmo que 30%). No Exemplo: R% 300,00 </li>
+                <li>Poupança e pagamento de dívidas:<br/> Deve representar pelo menos 20% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,20(Que é o mesmo que 20%). No Exemplo: R% 200,00 </li>
+            </ul>
+        </section>
+        <section class="calculadora__total">
+            <div>
+                <h2>AGORA É SUA VEZ:</h3>
+                <p>Use nossa caluladora para multiplicar seu salário pelas porcentagens</p>
                 
-            </table>
-            
-        </div>
-    </div>
-    <script>
-        function insert(num){
-           var numero = document.getElementById('resultado').innerHTML;
-           document.getElementById('resultado').innerHTML = numero + num;
-        }
-        function clean(){
-            document.getElementById('resultado').innerHTML = "";
-        }
-        function back(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-        }
+            </div>
+            <div>/*class="fundo"*/
+                <div class="calculadora">
+                    <h1>Calculadora</h1>
+                    <p id="resultado"></p>
+                    <table>
+                        <tr>
+                            <td><button class="botao" onclick="clean()">C</button></td>
+                            <td><button class="botao" onclick="back()"><=</button></td>
+                            <td><button class="botao" onclick="insert('/')">/</button></td>
+                            <td><button class="botao" onclick="insert('*')">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('7')">7</button></td>
+                            <td><button class="botao" onclick="insert('8')">8</button></td>
+                            <td><button class="botao" onclick="insert('9')">9</button></td>
+                            <td><button class="botao" onclick="insert('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('4')">4</button></td>
+                            <td><button class="botao" onclick="insert('5')">5</button></td>
+                            <td><button class="botao" onclick="insert('6')">6</button></td>
+                            <td><button class="botao" onclick="insert('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('1')">1</button></td>
+                            <td><button class="botao" onclick="insert('2')">2</button></td>
+                            <td><button class="botao" onclick="insert('3')">3</button></td>
+                            <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button>
+                            </td>
+                            <td><button class="botao" onclick="insert('.')">.</button></td>
+                        </tr>
 
-        function calcular(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado){
-                document.getElementById('resultado').innerHTML = eval(resultado);
+                    </table>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            function insert(num) {
+                var numero = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = numero + num;
             }
-        }
-    </script>
+            function clean() {
+                document.getElementById('resultado').innerHTML = "";
+            }
+            function back() {
+                var resultado = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+            }
+
+            function calcular() {
+                var resultado = document.getElementById('resultado').innerHTML;
+                if (resultado) {
+                    document.getElementById('resultado').innerHTML = eval(resultado);
+                }
+            }
+        </script>
 </body>
+
 </html>
