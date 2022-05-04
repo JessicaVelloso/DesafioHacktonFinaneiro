@@ -70,9 +70,9 @@ h1{
 }
 .curso{
     justify-content: center;
+    
 }
-p{
-    width: 900px;
+.curso h2{
     justify-content: center;
 }
 .curso-flex{
@@ -84,13 +84,47 @@ p{
    
     
 }
-li{
-    padding-bottom: 10px;
-    margin-right: 10px;
+.cursos{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
 }
-.curso-textos{
-    width: 50%;
+.cursos p{
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+table{
+    justify-content: center;
+    color: darkgreen;
+    border-collapse: collapse; /* CSS2 */
+    background: #ffffff;
+    border: 1px solid goldenrod;
+    width: 90%;
+}
+table td{
+    text-align: right;
+    border: 1px solid goldenrod;
+}
+table th{
+    text-align: left;
+    border: 1px solid goldenrod;
+    background: #ffffff;
+}
+.botao__tabela{
+    margin-top: 10px;
+    border: none;
+    width: 140px;
+    background-color: goldenrod;
+    color: darkgreen;
+}
+.botao__tabela a{
+    color: darkgreen;
+    font-size: 15px;
 }
 .curso-img{
+    align-items: center;
     max-width: 50%;
 }   
