@@ -62,7 +62,7 @@ header{
 /*TÉRMINO DO CABEÇALHO/INÍCIO DO MAIN*/
 
 main{
-    height: 100vw;
+    height: auto;
     background-color: white;
     color: darkgreen;
     min-width: 300px;
@@ -86,14 +86,16 @@ h1{
 .curso{
     justify-content: center;
     margin-bottom: 35px;  
+    margin-right: 9%;
 }
 .curso h2{
     text-align: center;
 }
 .curso-flex{
     display: flex;
-    
     margin-top: 20px;
+    
+    
 }
 
 .cursos-info{
@@ -145,6 +147,6 @@ table th{
 }
 .curso-img{
     align-items: center;
-    width: 180px;
-    height: 180px;
+    width: auto;
+    height: auto;
 }   
