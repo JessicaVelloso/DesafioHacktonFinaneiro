@@ -83,3 +83,38 @@ p{
 .centro{
     text-align: center;
 }
+/*RODAPÉ*/
+
+.rodape-prin{
+    background-color: #2DC083;       
+    clear: both;
+    height: 60px;      
+    color: rgb(250,255,250);
+    font-size: 18px;
+    font-family: "arial", sans-serif;
+}
+
+.rodape-prin span{
+  
+  float: left;
+  width:45%;
+  line-height: 60px; /* Mesma altura do rodapé */
+  
+}
+
+.icones-sociais ul{
+  
+  display: inline-block;
+  height: inherit;
+  float: left;
+  margin-left: 50px;
+  
+}
+
+.icones-sociais li{
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    width: 50px;
+    height: inherit;
+}
