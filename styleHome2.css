@@ -9,9 +9,9 @@
 }
 :root{
     --cor--1:darkgreen;
-    --cor--2:#2DC083;
-    --cor--3:goldenrod;
-    --cor--4:#dff6ec;
+    --cor--1:#2DC083;
+    --cor--1:goldenrod;
+    --cor--1:#dff6ec;
 }
 body{
     background-color: #e6f5ed; 
@@ -22,12 +22,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0;
+    padding: 10px 0;
     background-color: #2DC083;
 }
 
 .logo img{
-    margin: 0;
     width:85px;
     padding-left: 30px;
 }
@@ -53,33 +52,54 @@ header{
     transform: translateX(8px) scale(1.2);   
 }
 /*COLOCAR EM TODAS AS PÁGINAS, ATÉ AQUI*/
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 main{
-    height: 100vw;
-    width: 85%;
-    margin: auto;
+    width: 90%;
 }
-img{
-    margin-top: 20px;
-    margin-left: 25%;
+
+.column {
+    float: left;
     width: 50%;
+    padding: 10%;
+    height: 300px; 
 }
-.textos{
-    margin-top: 15px;
-    background-color: rgb(241, 246, 242);
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.imgTitulo{
+    justify-content: center;
+}
+
+.imgMain{
+    width: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.titulo-home{
     text-align: center;
+    color: #2DC083;
 }
-h1{
-    padding-top: 15px;
-    font-size: 40px;
-    text-align: center;
+
+.texto-alternado{
+    margin: 0 auto;
+    width: 90%;
 }
-p{
-    width: 60%;
-    font-size: 20px;
-    padding-bottom: 15px;
-    margin: auto;
+
+.texto-direita{
     text-align: justify;
 }
-.centro{
-    text-align: center;
+
+main p{
+    margin-bottom: 15px;
 }
+

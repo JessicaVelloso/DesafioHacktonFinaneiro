@@ -25,22 +25,22 @@
     <main>
         <h1>CALCULADORA</h1>
         <section>
-            <h2>Regra 50 30 20?</h2>
+            <h2>Regra 50 30 20</h2>
             <p>Abaixo, te ajudamos a fazer as contas, em uma caluladora normal, utilizando um exemplo de alguém que tem renda líquida de R$1.000,00</p>
+            <h3>E na prática, como calculamos isso em uma calculadora real?</h3>
             <ul>
-                <h3>E na prática, como calculamos isso em uma calculadora real?</h3>
-                <li>Necessidades:<br/> O modelo sugere que utilizemos 50% da nossa renda com gastos essenciais. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,50(Que é o mesmo que 50%). No Exemplo: R% 500,00 </li>
-                <li>Desejos pessoais:<br/> O valor máximo deve corresponder a 30% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,30(Que é o mesmo que 30%). No Exemplo: R% 300,00 </li>
-                <li>Poupança e pagamento de dívidas:<br/> Deve representar pelo menos 20% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,20(Que é o mesmo que 20%). No Exemplo: R% 200,00 </li>
+                <li><strong>Necessidades:</strong><br/> O modelo sugere que utilizemos 50% da nossa renda com gastos essenciais. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,50(Que é o mesmo que 50%). No Exemplo: R$ 500,00 </li>
+                <li><strong>Desejos pessoais:</strong><br/> O valor máximo deve corresponder a 30% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,30(Que é o mesmo que 30%). No Exemplo: R$ 300,00 </li>
+                <li><strong>Poupança e pagamento de dívidas:</strong><br/> Deve representar pelo menos 20% da renda. Logo, a conta a ser feita na calculadora é:<br/> O valor total da sua renda vezes 0,20(Que é o mesmo que 20%). No Exemplo: R$ 200,00 </li>
             </ul>
         </section>
         <section class="calculadora__total">
             <div>
-                <h2>AGORA É SUA VEZ:</h3>
-                <p>Use nossa caluladora para multiplicar seu salário pelas porcentagens</p>
+                <h3>AGORA É SUA VEZ:</h3>
+                <p class="centro">Use nossa caluladora para multiplicar seu salário pelas porcentagens</p>
                 
             </div>
-            <div>/*class="fundo"*/
+            <div class="calculadora-posição">
                 <div class="calculadora">
                     <h1>Calculadora</h1>
                     <p id="resultado"></p>
@@ -81,6 +81,9 @@
                 </div>
             </div>
         </section>
+        <div>
+            <p class="aviso"><strong>Sabemos que a teoria é muito mais fácil que a prática, porém, tente ao máximo chegar próximo ao número dado pelas contas das porcentagem, assim, verá sua vida mudar cada vez mais fácil.</strong></p>
+        </div>
         <script>
             function insert(num) {
                 var numero = document.getElementById('resultado').innerHTML;
@@ -101,6 +104,7 @@
                 }
             }
         </script>
+        
 </body>
 
 </html>
