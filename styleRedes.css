@@ -1,0 +1,90 @@
+/*COLOCAR EM TODAS AS PÁGINAS*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0px;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --cor--1:rgb(60, 66, 60);
+    --cor--2:#2DC083;
+    --cor--3:goldenrod;
+    --cor--4:#dff6ec;
+}
+body{
+    background-color: #f3f1e2; 
+    color: darkgreen;
+}
+/*CABEÇALHO*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+    background-color: #2DC083;
+}
+
+.logo img{
+    margin: 0;
+    width:85px;
+    padding-left: 30px;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 45px;
+    justify-items: center;
+}
+
+.menu a {
+    color: white;
+    transition: transform 1s;
+}
+  
+.menu a:hover,
+.menu a:focus {
+    color: darkgreen;
+    text-decoration: solid;
+    transform: translateX(8px) scale(1.2);   
+}
+/*COLOCAR EM TODAS AS PÁGINAS, ATÉ AQUI*/
+
+.pessoas{
+    text-align: center;
+}
+h1, h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+h2{
+    margin-top: 15px;
+    color: goldenrod;
+}
+table{
+    color: #333805;
+    margin: auto;
+    font-size: 20px;
+    text-align: left;
+}
+th{
+    width: 100px;
+}
+td{
+    text-align: right;
+}
+td a{
+    color: #000a06;
+}
+td a:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+img{
+    padding: 15px 0;
+    width: 100px;
+}
